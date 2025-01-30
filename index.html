@@ -32,6 +32,16 @@
             font-weight: normal; /* Убираем жирный шрифт для "Nosso slogan é" */
             margin: 10px 0;
         }
+        header button {
+            background-color: #000; /* Черный фон */
+            color: #fff; /* Белый текст */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 20px 0;
+            border-radius: 15px; /* Скругленные края */
+        }
         .main-content {
             padding: 20px;
             text-align: center;
@@ -58,8 +68,8 @@
         }
         .bonus-section {
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            flex-direction: column; /* Бонусы друг под другом */
+            align-items: center; /* Центрирование по горизонтали */
             margin: 20px 0;
         }
         .bonus-section img {
@@ -67,8 +77,8 @@
             height: auto;
         }
         .bonus-section div {
-            width: 30%;
-            margin-bottom: 20px;
+            width: 80%; /* Ширина блока с бонусом */
+            margin-bottom: 40px; /* Отступ между бонусами */
         }
         .bonus-section strong {
             font-size: 20px; /* Увеличенный размер */
@@ -106,7 +116,7 @@
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="1win Logo">
+        <img src="logo.png" alt="1win Logo">
         <h1>Melhor serviço</h1>
         <p>I-GAMING</p>
         <p>Nosso slogan é "pagamentos rápidos e grandes ganhos"</p>
